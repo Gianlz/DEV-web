@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Agenda</title>
+</head>
+<!--Main infos-->
+<nav>
+    <div class="Menu">
+        <div class="bsize">
+            <h1>Agenda</h1>
+            <img src="Images/contato.png" alt="">
+            <ul>
+                <li><a href="https://www.ifc-riodosul.edu.br/site/" target="_blank" style="text-decoration: none;">IFC</a></li>
+                <li><a href="https://www.ifc-riodosul.edu.br/site/" target="_blank" style="text-decoration: none;">BCC</a></li>
+                <li><a href="https://www.ifc-riodosul.edu.br/site/" target="_blank" style="text-decoration: none;">Atividade Web dev</a></li>
+            </ul>
+        </div>
+    </div>
+    
+</nav>
+
+
+<body>
+
+<div class="backg-b">
+    <ol>
+        <li>Atividade</li>
+    </ol>
+    <p>Infos:</p>
+<section class="formulario">
+    <form action="" method="post">
+    <div class="Tabelas">
+        <table border="1px">
+            
+            <tr>
+                <th>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" />
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" />
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" id="telefone" />
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" />
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <form action="enviar" method="post">
+                        <label for="Nascimento">Nascimento:</label>
+                        <input type="date" id="Nascimento" name="Nascimento">
+                        <input type="submit">
+                      </form>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="idade">Idade:</label>
+                    <input type="text" id="idade" />
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="rede">Rede Social:</label>
+                    <input type="text" id="rede" />
+                </th>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="checkbox">
+        <label for="parente">Parentesco: </label>
+        <br>
+        <input type="radio"  id="parente" name="tipo" value="1"> É parente
+        <input type="radio"  id="parente" name="tipo" value="1"> Não é parente
+
+        <br>
+        <br>
+
+        <label for="sexo">Sexo: </label>
+        <br>
+        <input type="radio"  id="sexo" name="se" value="1"> Masculino
+        <input type="radio"  id="sexo" name="se" value="1"> Feminino
+    </div>
+    
+    <br>
+    <br>
+
+    <label for="cars">Onde conheceu: </label>
+    <br>
+    <select name="cars" id="cars">
+                    
+        <option value="1">Escola</option>
+        <option value="2">Trabalho</option>
+        <option value="3">Festa</option>
+        <option value="4">Outro</option>
+    </select>
+
+
+    <br>
+    <br>
+
+    <form action="enviar" method="post"></form>
+    <button type="submit">Enviar</button>
+    </form>
+</section>
+    
+
+</div>
+</body>
+
+
+
+<footer class="foot">
+
+<p class="red"><b>*Feito por Gianluca Zugno 2022*</b></p>
+</footer>
+
+</html>
