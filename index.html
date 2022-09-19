@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
+    <script type="text/javascript" src="Scripts/script.js"></script>
+   
+
+    <title>Agenda</title>
+</head>
+<!--Main infos-->
+
+<body>
+
+<div container-fluid>
+    
+    <div class="Menu">
+        <div class="bsize">
+            <h1>Agenda</h1>
+            <img src="Images/contato.png" alt="">
+            <ul>
+                <li><a href="https://www.ifc-riodosul.edu.br/site/" target="_blank" style="text-decoration: none;">IFC</a></li>
+                <li><a href="https://www.ifc-riodosul.edu.br/site/" target="_blank" style="text-decoration: none;">BCC</a></li>
+                <li><a href="https://www.ifc-riodosul.edu.br/site/" target="_blank" style="text-decoration: none;">Cadastros</a></li>
+                <li><a href="https://github.com/Gianlz" target="_blank" style="text-decoration: none;">Github</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="backg-b">
+        <p>Infos:</p>
+        <form name="formulario" action="gabriel.php" method="post">
+        <div class="Tabelas">
+            <table>
+                
+                <tr>
+                    <th>
+                        <div class = "name">
+                            <label for="name">Nome:</label>
+                            <input type="text" name="nome" id="name" id="input-form" class="form-control"required/>
+                            
+                        </div>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" id="input-form" class="form-control" required/>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" id="telefone" id="input-form" name="telefone" class="form-control"  required/>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" id="input-form" name="email" class="form-control" required/>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <form action="enviar" method="post">
+                            <label for="Nascimento">Nascimento:</label>
+                            <input type="date" id="Nascimento"  name="Nascimento" class="form-control" required onclick="calculateAge()"/>
+                        </form>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" id="input-form" class="form-control" required/>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label for="rede">Rede Social:</label>
+                        <input type="text" id="rede" id="input-form" name="rede" class="form-control" required/>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+
+        <div class="checkbox">
+            <label for="parente">Parentesco: </label>
+            <br>
+            <input type="radio"  id="parente" name="tipo" value="1" required> É parente
+            <input type="radio"  id="parente" name="tipo" value="1" required> Não é parente
+
+            <br>
+            <br>
+
+            <label for="sexo">Sexo: </label>
+            <br>
+            <input type="radio"  id="sexo" name="se" value="1" required> Masculino
+            <input type="radio"  id="sexo" name="se" value="1" required> Feminino
+        </div>
+        
+        <br>
+        <br>
+
+        <label for="cars">Onde conheceu: </label>
+        <br>
+        <select name="Escola" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        
+            <option value="1">Escola</option>
+            <option value="2">Trabalho</option>
+            <option value="3">Festa</option>
+            <option value="4">Outro</option>
+        </select>
+
+        <br>
+        <br>
+        
+        <button class="btn btn-primary"  type="submit" onclick="validar()">Enviar</button>
+        </form>
+
+    </div>
+</div>
+</body>
+
+
+
+<footer class="foot">
+    
+<p class="red"><b>*Feito por Gianluca Zugno 2022*</b></p>
+</footer>
+
+</html>
